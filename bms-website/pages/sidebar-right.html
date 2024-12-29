@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sairam SPARKLE | Pages | Coordinators</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    /* Sponsors Section Styling */
+    .sponsors-title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #b9f3bb;
+      margin: 2rem 0 1rem 0;
+    }
+
+    .sponsors-intro {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #f1c7c7;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .sponsor-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      padding: 1rem;
+    }
+
+    .sponsor-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      padding: 1rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .sponsor-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .sponsor-logo {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+      transition: transform 0.3s;
+    }
+
+    .sponsor-card:hover .sponsor-logo {
+      transform: rotate(5deg);
+    }
+
+    .sponsor-card h2 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .sponsor-card p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    [data-aos] {
+      opacity: 0;
+      transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+    }
+
+    [data-aos="fade-up"] {
+      transform: translateY(20px);
+    }
+
+    [data-aos].aos-animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body id="top">
+
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('../images/demo/backgrounds/01.png');"> 
+  <div class="wrapper row0">
+    <header id="header" class="hoc clear center"> 
+      <h1 id="logo"><i class="fas fa-university"></i> <a href="../index.html">Sairam SPARKLE</a></h1>
+    </header>
+  </div>
+  <div class="wrapper row1">
+    <nav id="mainav" class="hoc clear"> 
+      <ul class="clear">
+        <li><a href="../index.html">Home</a></li>
+        <li class="active"><a class="drop" href="#">About</a>
+          <ul>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="full-width.html">Our team</a></li> 
+            <li><a href="#footer-section">Contact</a></li>
+          </ul>
+        </li>
+        <li><a href="basic-grid.html">Events</a></li>
+        <li><a href="font-icons.html">Mission & Vision</a></li>
+        <li><a href="sidebar-right.html">Sponsors</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<!-- End Top Background Image Wrapper -->
+
+<h1 class="sponsors-title">Our Esteemed Sponsors</h1>
+<p class="sponsors-intro">
+  We extend our heartfelt gratitude to our sponsors for their invaluable support in making this event a grand success. Here are our proud partners:
+</p>
+
+<div class="sponsor-grid">
+  <div class="sponsor-card" data-aos="fade-up">
+    <img src="../images\demo\imgr.jpg" alt="Sponsor 1 Logo" class="sponsor-logo">
+    <h2>Sairam Institutions</h2>
+    <p>Renowned educational institution dedicated to academic excellence, innovation, and holistic development of students.</p>
+  </div>
+  <div class="sponsor-card" data-aos="fade-up" data-aos-delay="200">
+    <img src="../images\demo\spon3.jpeg" alt="Sponsor 2 Logo" class="sponsor-logo">
+    <h2>Green Energy Solutions</h2>
+    <p>Innovators in the field of sustainable energy solutions, shaping a greener tomorrow.</p>
+  </div>
+  <div class="sponsor-card" data-aos="fade-up" data-aos-delay="400">
+    <img src="../images\demo\spon2.png" alt="Sponsor 3 Logo" class="sponsor-logo">
+    <h2>TCS</h2>
+    <p>Leading provider of technological solutions empowering businesses worldwide.</p>
+  </div>
+  <div class="sponsor-card" data-aos="fade-up" data-aos-delay="600">
+    <img src="../images\demo\spon4.png" alt="Sponsor 4 Logo" class="sponsor-logo">
+    <h2>Omega healthcare</h2>
+    <p>Pioneers in the field of healthcare innovations, dedicated to improving lives.</p>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  });
+</script>
+
+
+<div class="wrapper bgded" style="background-image:url('backgrounds/03.png');">
+  <section id="callback" class="hoc clear"> 
+    
+    <div>
+      <h6 class="heading">For comments</h6>
+      <form method="post" action="#">
+        <fieldset>
+          <input type="text" value="" placeholder="Name">
+          <input type="text" value="" placeholder="Email">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    
+  </section>
+</div>
+
+
+
+<div id="footer-section" class="wrapper row4"></div>
+  <footer id="footer" class="hoc clear">
+    <div class="center btmspace-50"> 
+      <h6 class="heading">Sri Sairam Institute of Technology - Cultural Fest</h6>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+      <p class="nospace">Stay Connected With Us</p>
+    </div>
+    <hr class="btmspace-50">
+    <div class="group">
+      <div class="one_third first">
+        <h6 class="heading">Contact</h6>
+        <ul class="nospace btmspace-30 linklist contact">
+          <li><i class="fas fa-map-marker-alt"></i>
+            <address>
+              Sri Sairam Institute of Technology, Sai Leo Nagar, West Tambaram, Chennai, Tamil Nadu, India.
+            </address>
+          </li>
+          <li><i class="fas fa-phone"></i> +91-44-22512444</li>
+          <li><i class="far fa-envelope"></i> culturalfest@sairamit.edu</li>
+          <li><i class="fas fa-clock"></i> Monday - Saturday<br>
+            08.00am - 17.00pm</li>
+        </ul>
+      </div>
+      <div class="one_third">
+        <h6 class="heading">More Info</h6>
+        <ul class="nospace linklist">
+          <li><a href="#">Event Schedule</a></li>
+          <li><a href="#">Competitions</a></li>
+          <li><a href="#">Workshops</a></li>
+          <li><a href="#">Sponsors</a></li>
+        </ul>
+      </div>
+      <div class="one_third">
+        <h6 class="heading">Sincere Thanks</h6>
+        <ul class="nospace linklist">
+          <li>
+            <article>
+              <p class="nospace btmspace-10"><a href="#">We extend our heartfelt gratitude to our beloved CEO, <strong>Mr. Sai Prakash Leo Muthu</strong>, and the management of <strong>Sri Sairam Institute of Technology</strong> for their unwavering support and guidance in making this cultural fest a reality. Your encouragement inspires us to excel and create memorable experiences for everyone.</a></p>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    
+    <p class="fl_left">Copyright &copy;Sri Sairam Institute of Technology, 2024. All Rights Reserved</p>
+    <p class="fl_right">Created by <a target="_blank" href="https://www.linkedin.com/in/balamurugan-sakthivel-443080294" title="Author">Balamurugan.S</a></p>
+    
+  </div>
+</div>
+
+
+
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
